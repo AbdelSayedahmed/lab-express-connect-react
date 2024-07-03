@@ -18,7 +18,7 @@ export default function Logs() {
   return (
     <div>
       {logs.map((log) => (
-        <Link key={log.id} to={`/${log.id}`}>
+        <Link key={log.id} to={`/logs/${log.id}`}>
           <LogListing
             name={log.captainName}
             title={log.title}

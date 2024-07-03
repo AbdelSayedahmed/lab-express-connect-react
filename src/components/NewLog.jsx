@@ -43,15 +43,15 @@ export default function NewLog() {
 
   return (
     <div className="new-log-container">
-      <h2 className="new-note-heading">New Note</h2>
-      <form className="new-note_form" onSubmit={handleSubmit}>
+      <h2 className="new-log-heading">New Note</h2>
+      <form className="new-log_form" onSubmit={handleSubmit}>
         <div className="column-one">
-          <label className="new-note_form_label" htmlFor="captainName">
+          <label className="new-log_form_label" htmlFor="captainName">
             <br />
             <strong>Captain Name</strong>
             <br />
             <input
-              className="new-note_input"
+              className="new-log_input"
               type="text"
               id="captainName"
               name="captainName"
@@ -60,12 +60,12 @@ export default function NewLog() {
               required
             />
           </label>
-          <label className="new-note_form_label" htmlFor="title">
+          <label className="new-log_form_label" htmlFor="title">
             <br />
             <strong>Title</strong>
             <br />
             <input
-              className="new-note_input"
+              className="new-log_input"
               type="text"
               id="title"
               name="title"
@@ -74,12 +74,12 @@ export default function NewLog() {
               required
             />
           </label>
-          <label className="new-note_form_label" htmlFor="post">
+          <label className="new-log_form_label" htmlFor="post">
             <br />
             <strong>Post</strong>
             <br />
             <textarea
-              className="new-note_input"
+              className="new-log_input"
               id="post"
               name="post"
               value={form.post}
@@ -87,13 +87,13 @@ export default function NewLog() {
               required
             />
           </label>
-          <label className="new-note_form_label" htmlFor="mistakes">
+          <label className="new-log_form_label" htmlFor="mistakes">
             <br />
             <strong>Were any mistakes made today?</strong>
             <br />
             <div>
               <input
-                className="new-note_input"
+                className="new-log_input"
                 type="radio"
                 id="mistakes-yes"
                 name="mistakesWereMadeToday"
@@ -105,7 +105,7 @@ export default function NewLog() {
               <label htmlFor="mistakes-yes">Yes</label>
               <br />
               <input
-                className="new-note_input"
+                className="new-log_input"
                 type="radio"
                 id="mistakes-no"
                 name="mistakesWereMadeToday"
@@ -117,12 +117,12 @@ export default function NewLog() {
               <label htmlFor="mistakes-no">No</label>
             </div>
           </label>
-          <label className="new-note_form_label" htmlFor="daysSinceLastCrisis">
+          <label className="new-log_form_label" htmlFor="daysSinceLastCrisis">
             <br />
             <strong>Days since last crisis: </strong>
             <br />
             <input
-              className="new-note_input"
+              className="new-log_input"
               type="text"
               id="daysSinceLastCrisis"
               name="daysSinceLastCrisis"
