@@ -17,7 +17,7 @@ export default function NewLog() {
       body: JSON.stringify(log),
       headers: { "Content-Type": "application/json" },
     };
-    return fetch("http://localhost:8008", options).then((response) => {
+    return fetch("http://localhost:8008/logs", options).then((response) => {
       return response.json();
     });
   }
@@ -34,7 +34,7 @@ export default function NewLog() {
     event.preventDefault();
     createLog(form)
       .then((response) => {
-        navigate(`/log/${response.id}`);
+        navigate(`/logs/${response.id}`);
       })
       .catch((error) => {
         console.error(error);
@@ -78,9 +78,8 @@ export default function NewLog() {
             <br />
             <strong>Post</strong>
             <br />
-            <input
+            <textarea
               className="new-note_input"
-              type="text"
               id="post"
               name="post"
               value={form.post}
