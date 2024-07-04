@@ -43,7 +43,7 @@ export default function NewLog() {
 
   return (
     <div className="new-log-container">
-      <h2 className="new-log-heading">New Note</h2>
+      <h2 className="new-log-heading">New Log</h2>
       <form className="new-log_form" onSubmit={handleSubmit}>
         <div className="column-one">
           <label className="new-log_form_label" htmlFor="captainName">
