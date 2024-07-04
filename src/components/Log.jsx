@@ -38,19 +38,23 @@ export default function Log() {
 
   return (
     <div className="log-container">
-      <div className="log-display">
-        <h2>{log.title}</h2>
-        <p>{log.post}</p>
-        <p>{log.mistakesWereMadeToday ? "" : "No"} mistakes were made today</p>
-        <p>Days since last crisis: {log.daysSinceLastCrisis}</p>
-        <p>- {log.captainName}</p>
-        <button className="edit" onClick={() => navigate(`/logs/${id}/edit`)}>
-          Edit
-        </button>
-        <button className="delete" onClick={handleDelete}>
-          Delete
-        </button>
-      </div>
+      <h2>{log.title}</h2>
+      <p>{log.post}</p>
+      <em>
+        <strong>
+          <p>
+            {log.mistakesWereMadeToday ? "" : "No"} mistakes were made today
+          </p>
+        </strong>
+      </em>
+      <p>Days since last crisis: {log.daysSinceLastCrisis}</p>
+      <p>- {log.captainName}</p>
+      <button className="edit" onClick={() => navigate(`/logs/${id}/edit`)}>
+        Edit
+      </button>
+      <button className="delete" onClick={handleDelete}>
+        Delete
+      </button>
     </div>
   );
 }

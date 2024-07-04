@@ -57,3 +57,20 @@ h1 {
 .log-listing-container a:hover {
     color: darkgoldenrod;
 }
+
+.log-container {
+    text-align: center;
+}
+
+.log-container button {
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin: 0px 10px 0px 10px;
+}
+
+.log-container button:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+}
