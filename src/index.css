@@ -1,4 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+body {
+    font-family: Pirata One;
+}
+
+a {
+    cursor: pointer;
+}
+
 .nav-container {
     display: flex;
     justify-content: space-around;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    border-radius: 15px;
+    padding: 5px 20px;
+}
+
+.nav-container a:hover {
+    color: white;
+    background-color: darkgrey;
 }
