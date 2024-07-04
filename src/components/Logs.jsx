@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import LogListing from "./LogListing";
 
 export default function Logs() {
@@ -16,17 +15,16 @@ export default function Logs() {
   }, []);
 
   return (
-    <div>
+    <div className="logs-container">
       {logs.map((log) => (
-        <Link key={log.id} to={`/logs/${log.id}`}>
-          <LogListing
-            name={log.captainName}
-            title={log.title}
-            post={log.post}
-            mistakes={log.mistakesWereMadeToday}
-            crisis={log.daysSinceLastCrisis}
-          />
-        </Link>
+        <LogListing
+          id={log.id}
+          name={log.captainName}
+          title={log.title}
+          post={log.post}
+          mistakes={log.mistakesWereMadeToday}
+          crisis={log.daysSinceLastCrisis}
+        />
       ))}
     </div>
   );

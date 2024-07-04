@@ -1,20 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 body {
-    font-family: Pirata One;
+    font-family: Roboto Slab;
 }
 
 a {
     cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: Pirata One;
 }
 
 .nav-container {
+    font-family: Pirata One;
     display: flex;
     justify-content: space-around;
+    margin: 10px 0px 20px 0px;
 }
 
 .nav-container a {
-    text-decoration: none;
-    color: black;
     border: 1px solid grey;
     border-radius: 15px;
     padding: 5px 20px;
@@ -23,4 +32,28 @@ a {
 .nav-container a:hover {
     color: white;
     background-color: darkgrey;
+}
+
+.logs-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    gap: 30px;
+}
+
+.log-listing-container {
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 400px;
+    min-height: 350px;
+    height: max-content;
+    padding: 5px 20px;
+}
+
+.log-listing-container a {
+    text-align: right;
+}
+
+.log-listing-container a:hover {
+    color: darkgoldenrod;
 }
